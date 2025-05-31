@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="ATHUL BABU" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="ATHUL BABU">ATHUL BABU</h1>
+
+          <p class="title">Embedded Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:athulbabue04@gmail.com" class="contact-link">athulbabue04@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91-9048020515" class="contact-link">+91 9048020515</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-07-04">July 4, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Thissur, Kerala, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    <p>
+      I'm an Embedded Systems and Hardware Developer from Kerala, India, passionate about creating intelligent, real-world solutions by combining electronics with software. I specialize in embedded systems using microcontrollers, sensors, and custom PCB design. I focus on building reliable, scalable hardware for smart devices, IoT systems, and real-time applications. I take a hands-on, creative approach to every project, ensuring it's both functional and user-friendly.
+    </p>
+
+    <p>
+      My goal is to bridge the gap between AI and hardware. I've developed systems for health monitoring, AI-assisted coaching, and IoT products—each circuit built with purpose, precision, and a problem-solving mindset.
+    </p>
+  </section>
+
+  <!-- Service Section -->
+  <section class="service">
+    <h3 class="h3 service-title">What I'm doing</h3>
+
+    <ul class="service-list">
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Embedded Systems</h4>
+          <p class="service-item-text">
+            Develops efficient, reliable real-time firmware for Microcontrollers like ESP32 and Raspberry Pi.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Edge Computing</h4>
+          <p class="service-item-text">
+            Creating edge systems for low-latency, efficient, and responsive data processing.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">PCB Design</h4>
+          <p class="service-item-text">
+            Designing and fabricating reliable, high-performance custom PCBs for embedded systems.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Automation</h4>
+          <p class="service-item-text">
+            Building automated solutions for AI-driven control and report generation.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+</article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume " data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt. Model Engineering College</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+Completed with core focus on Digital Electronics, Microprocessors, Embedded Systems, Signals & Systems, VLSI, and Communication Systems. Gained strong technical skills through practical projects in embedded and AI domains              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vijayagiri Pubic School</h4>
+
+              <span>2019-2021</span>
+
+              <p class="timeline-text">
+Studied Computer Science with a strong foundation in Physics, Chemistry, and programming basics.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern, GE HealthCare</h4>
+
+              <span>Jan, 2025 — Present</span>
+
+              <p class="timeline-text">
+                  Currently working on medical standards and testing, with a focus on CISPR 11 and IEC 60601 compliance. Performing EMI/EMC and ESD testing on medical devices using tools like an 8 GHz Serial Data Analyzer, Digital Storage Oscilloscope (DSO), RF/BCI probes, and Rohde & Schwarz software. Automating test workflows through Python scripting.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Backend Developer, Progresso Pvt Ltd</h4>
+
+              <span>Jan, 2023 - Jun, 2023 </span>
+
+              <p class="timeline-text">
+                Engineered a cross-platform mobile application using Flutter for the frontend and Django for the backend, achieving 
+                seamless integration and performance across Android and iOS. 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="book-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Skills</h3>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="skill-row">
+    <h4 style="color: white;">Technical Skills:</h4>
+    <ul class="skill-list">
+      <li>Python</li>
+      <li>C</li>
+      <li>Flask</li>
+      <li>GitHub</li>
+      <li>Django</li>
+      <li>IoT</li>
+      <li>Robotics</li>
+      <li>Vivado</li>
+      <li>LTspice</li>
+      <li>Proteus</li>
+      <li>Microsoft Tools</li>
+      <li>SystemVerilog</li>
+      <li>MQTT</li>
+      <li>Serial Communication Protocols</li>
+      <li>RISC-V</li>
+    </ul>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="skill-row">
+    <h4 style="color: white;">Soft Skills:</h4>
+    <ul class="skill-list">
+      <li>Creative Thinking</li>
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+      <li>Communication Skills</li>
+    </ul>
+  </div>
+
+  <!-- Areas of Interest -->
+  <div class="skill-row">
+    <h4 style="color: white;">Areas of Interest:</h4>
+    <ul class="skill-list">
+      <li>Artificial Intelligence</li>
+      <li>Robotic Process Automation</li>
+      <li>Embedded System Design</li>
+      <li>RTOS</li>
+      <li>Edge Computing</li>
+      <li>Generative AI</li>
+      <li>Machine Learning</li>
+    </ul>
+  </div>
+
+  <style>
+    .skill-row {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .skill-row h4 {
+      margin-bottom: 10px;
+      color: hsl(45, 54%, 40%);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    ul.skill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.skill-list li {
+      background-color: hsl(45, 54%, 58%);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      color: #333;
+      user-select: none;
+      cursor: default;
+    }
+  </style>
+</section>
+
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
