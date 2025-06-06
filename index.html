@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="ATHUL BABU" width="80">
+          <img src="./assets/images/Athul.jpg" alt="ATHUL BABU" width="80">
         </figure>
 
         <div class="info-content">
@@ -177,13 +177,13 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
         </ul>
 
       </nav>
-
-
-
-
 
       <!--
         - #ABOUT
@@ -197,7 +197,7 @@
 
   <section class="about-text">
     <p>
-      I'm an Embedded Systems and Hardware Developer from Kerala, India, passionate about creating intelligent, real-world solutions by combining electronics with software. I specialize in embedded systems using microcontrollers, sensors, and custom PCB design. I focus on building reliable, scalable hardware for smart devices, IoT systems, and real-time applications. I take a hands-on, creative approach to every project, ensuring it's both functional and user-friendly.
+      I'm an Embedded Systems and hardware Developer from Kerala, India, passionate about creating intelligent, real-world solutions by combining electronics with software. I specialize in embedded systems using microcontrollers, sensors, and custom PCB design. I focus on building reliable, scalable hardware for smart devices, IoT systems, and real-time applications. I take a hands-on, creative approach to every project, ensuring it's both functional and user-friendly.
     </p>
 
     <p>
@@ -225,7 +225,7 @@
 
       <li class="service-item">
         <!-- <div class="service-icon-box">
-          <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+          <img src="./assets/images/icon-dev.svg" alt="Hardware Projects icon" width="40">
         </div> -->
         <div class="service-content-box">
           <h4 class="h4 service-item-title">Edge Computing</h4>
@@ -443,10 +443,90 @@ Studied Computer Science with a strong foundation in Physics, Chemistry, and pro
     }
   </style>
 </section>
-
-
-
       </article>
+
+      <!--
+        - #Project
+      -->
+
+      <article class="portfolio" data-page="portfolio"> 
+
+    <header>
+      <h2 class="h2 article-title">Projects</h2>
+    </header>
+
+    <section class="projects">
+
+      <!-- Filter Buttons -->
+      <ul class="filter-list">
+        <li class="filter-item">
+          <button class="active" data-filter-btn>all</button>
+        </li>
+
+        <li class="filter-item">
+          <button data-filter-btn>Hardware projects</button>
+        </li>
+
+        <li class="filter-item">
+          <button data-filter-btn>AI projects</button>
+        </li>
+      </ul>
+
+      <!-- Select Dropdown -->
+      <div class="filter-select-box">
+        <button class="filter-select" data-select>
+          <div class="select-value" data-selecct-value>Select category</div>
+          <div class="select-icon">
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </button>
+
+        <ul class="select-list">
+          <li class="select-item">
+            <button data-select-item>all</button>
+          </li>
+
+          <li class="select-item">
+            <button data-select-item>Hardware projects</button>
+          </li>
+
+          <li class="select-item">
+            <button data-select-item>AI projects</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Cards -->
+      <ul class="project-list">
+        <!-- Your existing projects -->
+        <li class="project-item active" data-filter-item data-category="Hardware Projects">
+          <a href="https://drive.google.com/file/d/1Tv1jaCysH-BC9-mdo1rp1_kR9SlVk-wG/view?usp=drivesdk">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/images/chess.jpg" alt="orizon" loading="lazy">
+            </figure>
+            <h3 class="project-title">Chess Tutor</h3>
+            <p class="project-category">Hardware Projects</p>
+          </a>
+        </li>
+
+        <li class="project-item active" data-filter-item data-category="AI Projects">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+            </figure>
+            <h3 class="project-title">Fundo</h3>
+            <p class="project-category">AI Projects</p>
+          </a>
+        </li>
+
+      </ul>
+    </section>
 
     </div>
 
